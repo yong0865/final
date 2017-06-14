@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/take"
+    tools:context="com.example.yo.myfaceapp.MainActivity">
+    <TextView
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사진에 나온 자신의 얼굴에 대한 정보를 확인해 보세요"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView1"
+         />
+
+    <Button
+        android:background="#ffffff"
+        android:textSize="20dp"
+        android:onClick="btnstart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="테스트 시작하기"
+        android:id="@+id/btnstart"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

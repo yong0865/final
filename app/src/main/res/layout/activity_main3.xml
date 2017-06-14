@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yo.myfaceapp.Main3Activity">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/button_take_a_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사진 찍기"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:onClick="takePhoto"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button_select_a_photo_in_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="앨범에서 사진 가져오기"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:onClick="selectImageInAlbum" />
+    </RelativeLayout>
+</LinearLayout>
