@@ -176,7 +176,7 @@ public class Main2Activity extends AppCompatActivity {
     }
 
     public void detect(View view) {
-        // Put the image into an input stream for detection.
+
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         mBitmap.compress(Bitmap.CompressFormat.JPEG, 100, output);
         ByteArrayInputStream inputStream = new ByteArrayInputStream(output.toByteArray());

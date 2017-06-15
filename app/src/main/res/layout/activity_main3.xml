@@ -20,6 +20,13 @@
             android:layout_alignParentBottom="true"
             android:onClick="takePhoto"
             />
+        <TextView
+            android:id="@id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/button_take_a_photo"
+            android:layout_gravity="center" />
 
 
     </RelativeLayout>

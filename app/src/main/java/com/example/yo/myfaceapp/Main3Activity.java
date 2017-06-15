@@ -71,7 +71,7 @@ public class Main3Activity extends AppCompatActivity {
                 intent.putExtra(MediaStore.EXTRA_OUTPUT, mUriPhotoTaken);
                 startActivityForResult(intent, REQUEST_TAKE_PHOTO);
             } catch (IOException e) {
-                e.printStackTrace();
+                setInfo(e.getMessage());
             }
         }
     }
@@ -81,5 +81,9 @@ public class Main3Activity extends AppCompatActivity {
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(intent, REQUEST_SELECT_IMAGE_IN_ALBUM);
         }
+    }
+    private void setInfo(String info) {
+        TextView textView = (TextView) findViewById(R.id.info);
+        textView.setText(info);
     }
 }
